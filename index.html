@@ -92,10 +92,10 @@
 
     <div class="modal-overlay active">
       <div class="modal">
-        <div class="modal-content">
+        <div class="modal-content active">
           <div id="form">
             <h2>Nova Transação</h2>
-            <form action="">
+            <form action="" onsubmit="Form.submit(event)">
               <div class="input-group">
                 <label 
                   class="sr-only" 
@@ -137,12 +137,15 @@
               </div>
 
               <div class="input-group actions">
-                <a href="#" class="button cancel">Cancelar</a>
+                <a 
+                onclick="Modal.close()"
+                href="#" 
+                class="button cancel">Cancelar</a>
                 <button>Salvar</button>
               </div>
             </form>
           </div>
-        </div>
+        
       </div>
     </div>
 
@@ -150,17 +153,6 @@
       <p>dev.finance$</p>
     </footer>
 
-    <script>
-      Modal = {
-        open () {
-          //Abrir modal
-          // adicionar a class active ao modal
-        },
-        close () {
-          //fechar o modal
-          // remover a class active do modal
-        }
-      }
-    </script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
