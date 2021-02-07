@@ -190,7 +190,7 @@ const Form = {
     },
 
     saveTransaction (transaction){
-        Transaction.add(tranaction)
+        Transaction.add(transaction)
     },
 
     clearFields(){
@@ -207,7 +207,7 @@ const Form = {
         //validar se todas as informações foram preenchidas  
             const Transaction = Form.formatValues()      
         //formatar os dados para salvar 
-            Form.saveTransaction(trasantion)
+            Form.saveTransaction(transaction)
         //salvar
             Form.clearFields()
         //apagar os dados do formulário
