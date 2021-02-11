@@ -119,8 +119,8 @@ const Utils = {
     },
 
     formatDate(date){
-        const splitted = date.split("-")
-        return `${splittedDate[2]}/${splittedDate[1]}/${splittedDate[0]}}`
+        const splittedDate = date.split("-")
+        return `${splittedDate[2]}/${splittedDate[1]}/${splittedDate[0]}`
     },
 
     formatCurrancy(value){
@@ -194,7 +194,7 @@ const Form = {
         try{
             Form.validateFields()
         //validar se todas as informações foram preenchidas  
-            const Transaction = Form.formatValues()      
+            const transaction = Form.formatValues()      
         //formatar os dados para salvar 
             Form.saveTransaction(transaction)
         //salvar
